@@ -5,7 +5,7 @@ import { setCurrentUser } from "./redux/user/user.actions";
 import store from "./redux/store";
 import { Switch, Route } from "react-router-dom";
 import MainNavigation from "./components/navigation/mainNavigation.component";
-import Footer from "./components/footer/footer.component";
+//import Footer from "./components/footer/footer.component";
 import HomePage from "./pages/homePage/homePage";
 import ShopPage from "./pages/shopPage/shopPage";
 import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.component";
