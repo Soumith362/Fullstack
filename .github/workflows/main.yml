@@ -17,11 +17,11 @@ jobs:
 
       - name: Build Backend Docker Image
         run: |
-          docker build -t backend -f ./Fullstack/ecommerce-store-master/Dockerfile .
+          docker build -t backend -f ./Fullstack/ecommerce-store-master/backend/Dockerfile .
 
       - name: Build Frontend Docker Image
         run: |
-          docker build -t frontend -f ./Fullstack/ecommerce-store-master/Dockerfile .
+          docker build -t frontend -f ./Fullstack/ecommerce-store-master/frontend/Dockerfile .
 
   master_docker_deploy:
     runs-on: self-hosted
