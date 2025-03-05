@@ -16,12 +16,14 @@ jobs:
           ls -R
 
       - name: Build Backend Docker Image
+        working-directory: ./Fullstack/ecommerce-store-master/backend
         run: |
-          docker build -t backend -f ./Fullstack/ecommerce-store-master/backend/Dockerfile .
+          docker build -t backend -f ./Dockerfile .
 
       - name: Build Frontend Docker Image
+        working-directory: ./Fullstack/ecommerce-store-master/frontend
         run: |
-          docker build -t frontend -f ./Fullstack/ecommerce-store-master/frontend/Dockerfile .
+          docker build -t frontend -f ./Dockerfile .
 
   master_docker_deploy:
     runs-on: self-hosted
