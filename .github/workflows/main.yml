@@ -17,11 +17,11 @@ jobs:
 
       - name: Build Backend Docker Image
         run: |
-          docker build -t backend .
+          docker build -t backend -f /Fullstack/Dockerfile . 
 
       - name: Build Frontend Docker Image
         run: |
-          docker build -t frontend .
+          docker build -t frontend -f /Fullstack/Dockerfile .
 
   master_docker_deploy:
     runs-on: self-hosted
